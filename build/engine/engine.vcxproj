@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4848E15-66DE-37BA-8874-ED46E6BFF445}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>engine</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">engine.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">engine.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">engine.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">engine.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/OpenAL 1.1 SDK/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/Debug/engine.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/Debug/engine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/OpenAL 1.1 SDK/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/Release/engine.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/Release/engine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/OpenAL 1.1 SDK/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/MinSizeRel/engine.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/MinSizeRel/engine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/OpenAL 1.1 SDK/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/RelWithDebInfo/engine.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/RelWithDebInfo/engine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/engine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake -BC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build --check-stamp-file C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/engine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake -BC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build --check-stamp-file C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/engine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake -BC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build --check-stamp-file C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/engine/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake -BC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build --check-stamp-file C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\abstractPolyList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\boxConvex.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\clippedPolyList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\concretePolyList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\convex.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\convexBrush.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\depthSortList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\earlyOutPolyList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\extrudedPolyList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\gjk.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\optimizedPolyList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\planeExtractor.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\polyhedron.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\polytope.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\astAlloc.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\astNodes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\BASscan.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\BASgram.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\codeBlock.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\compiledEval.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\compiler.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\console.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleDoc.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleFunctions.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleInternal.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleLogger.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleParser.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleTypes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\cmdgram.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\CMDscan.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\dynamicTypes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\scriptObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\simBase.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\simDictionary.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\simManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\stringStack.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\telnetConsole.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\telnetDebugger.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\typeValidators.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\constructor\constructorSimpleMesh.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\bitRender.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\bitStream.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\bitTables.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\crc.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\chunkFile.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\dataChunker.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\dnet.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\fileObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\fileStream.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\filterStream.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\findMatch.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\frameAllocator.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\idGenerator.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\iTickable.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\memStream.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\nStream.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\nTypes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\resDictionary.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\resizeStream.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\resManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\stringTable.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\stringBuffer.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\tagDictionary.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\tokenizer.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\tVector.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\zipAggregate.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\zipHeaders.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\zipSubStream.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\unicode.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\theoraPlayer.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapBm8.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapBmp.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapGif.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapJpeg.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapPng.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\dgl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\dglMatrix.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gBitmap.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gFont.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gPalette.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gTexManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gVectorField.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\lensFlare.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\materialList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\materialPropertyMap.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\splineUtil.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\stripCache.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gDynamicTexture.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\i18n\lang.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\i18n\i18n.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\floorPlanRes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\forceField.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interior.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorCollision.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorDebug.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorInstance.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorIO.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorLightAnim.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorLMManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorMapRes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorRender.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorRes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorResObjects.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorSubObject.cc" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\itfdump.asm">
+    </None>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorMap.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\lightUpdateGrouper.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\mirrorSubObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\pathedInterior.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mBox.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mConsoleFunctions.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathFn.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMath_C.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMatrix.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mPlaneTransformer.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mQuadPatch.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mQuat.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mRandom.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mSolver.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mSplinePatch.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mathTypes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mathUtils.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathAMD.cc" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathAMD_ASM.asm">
+    </None>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathSSE.cc" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathSSE_ASM.asm">
+    </None>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platform.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\gameInterface.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformAssert.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformCPU.cc" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformCPUInfo.asm">
+    </None>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformFileIO.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformMemory.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformRedBook.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformString.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformVideo.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\profiler.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\detailManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\lightManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneGraph.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneLighting.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneRoot.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneState.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneTraversal.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sgUtil.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\shadowVolumeBSP.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\windingClipper.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\actionMap.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\connectionStringTable.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\decalManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netConnection.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netDownload.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netEvent.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netGhost.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netInterface.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netStringTable.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\pathManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\sceneObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\simPath.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\fluidQuadTree.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\fluidRender.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\fluidSupport.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\sky.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\sun.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\blender.cc" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\blender_asm.asm">
+    </None>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\bvQuadTree.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\terrCollision.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\terrData.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\terrLighting.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\terrRender.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\waterBlock.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsAnimate.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsCollision.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsDecal.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsDump.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsIntegerSet.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsLastDetail.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsMaterialList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsMesh.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsPartInstance.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShape.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShapeAlloc.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShapeConstruct.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShapeInstance.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShapeOldRead.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsSortedMesh.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsThread.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsTransform.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audio.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audioBuffer.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audioDataBlock.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audioFunctions.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audioStreamSourceFactory.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\oggMixedStreamSource.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\vorbisStream.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\vorbisStreamSource.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\wavStreamSource.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiCtrlArrayCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiFrameCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiPaneCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiScrollCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiStackCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiWindowCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiTabBookCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBackgroundCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBitmapBorderCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBitmapButtonCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBitmapCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBorderButton.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiButtonBaseCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiButtonCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiCheckBoxCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiColorPicker.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiConsole.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiConsoleEditCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiConsoleTextCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiMLTextCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiMLTextEditCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiPopUpCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiRadioCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiSliderCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTextCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTextEditCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTextEditSliderCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTextListCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTreeViewCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTabPageCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiListBoxCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiDirectoryFileListCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiDirectoryTreeCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiArrayCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiCanvas.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiControl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiDefaultControlRender.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiTSControl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiTypes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiControlListPopup.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiDebugger.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiEditCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiFilterCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiGraphCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiInspector.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiInspectorTypes.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiMenuBar.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiAviBitmapCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiChunkedBitmapCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiFadeinBitmapCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiMessageVectorCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiProgressCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\guiBubbleTextCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\guiInputCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\guiMouseEventCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\messageVector.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\guiTransitionCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\shiny\guiTheoraCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\shiny\guiEffectCanvas.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\shiny\guiTickCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\aiClient.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\aiConnection.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\aiPlayer.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\aiWheeledVehicle.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\ambientAudioManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\audioEmitter.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\badWordFilter.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\banList.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\camera.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\cameraSpline.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\collisionTest.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\debris.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\debugView.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fireballAtmosphere.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\game.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameBase.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameConnection.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameConnectionEvents.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameConnectionMoves.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameFunctions.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameProcess.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameTSCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\guiNoMouseCtrl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\guiPlayerView.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\item.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\main.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\missionArea.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\missionMarker.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\pathCamera.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\physicalZone.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\player.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\projectile.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\rigid.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\rigidShape.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\scopeAlwaysShape.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\shadow.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\shapeBase.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\shapeCollision.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\shapeImage.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\showTSShape.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\sphere.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\staticShape.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\trigger.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\tsStatic.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\version.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fps\guiClockHud.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fps\guiCrossHairHud.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fps\guiHealthBarHud.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fps\guiShapeNameHud.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\httpObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\net.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\netTest.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\serverQuery.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\tcpObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\cameraFXMgr.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\explosion.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxFoliageReplicator.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxLight.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxRenderObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxShapeReplicator.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxSunLight.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\lightning.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\particleEmitter.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\particleEngine.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\precipitation.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\splash.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\underLava.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\weatherLightning.cpp" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\flyingVehicle.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\guiSpeedometer.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\hoverVehicle.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\vehicle.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\vehicleBlocker.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\wheeledVehicle.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\frustrumCuller.cpp" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\quadTreeTracer.cpp" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\rectClipper.cpp" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\triBoxCheck.cpp" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\triRayCheck.cpp" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgDecalProjector.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgDetailMapping.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgLightingModel.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgLightManager.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgLightMap.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgLightObject.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgMissionLightingFilter.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgObjectShadows.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgSceneLighting.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgSceneLightingInterior.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgSceneLightingTerrain.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgScenePersist.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\volLight.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winAsmBlit.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winCPUInfo.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winConsole.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winD3DVideo.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winDInputDevice.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winDirectInput.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winFileio.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winFont.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winGL.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winGLSpecial.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winInput.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winMath.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winMath_ASM.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winMemory.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winMutex.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winNet.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winOGLVideo.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winOpenAL.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winProcessControl.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winRedbook.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winSemaphore.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winStrings.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winThread.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winTime.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winV2Video.cc" />
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winWindow.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\ZERO_CHECK.vcxproj">
+      <Project>{CBD947B5-22D9-3DDF-926D-23C6FF839C32}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

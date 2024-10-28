@@ -10,15 +10,8 @@
 #include "platform/platform.h"
 #endif
 
-#if defined(TORQUE_OS_MAC)
-#include "OpenAL/al.h"
-#include "OpenAL/alc.h"
-#include "OpenAL/altypes.h"
-#include "OpenAL/alctypes.h"
-#include "OpenAL/eaxtypes.h"
-#else
 // declare externs of the AL fns here.
-#include "al/altypes.h"
+#include "al/al.h"
 #include "al/alctypes.h"
 #include "al/eaxtypes.h"
 #define AL_FUNCTION(fn_return,fn_name,fn_args, fn_value) extern fn_return (FN_CDECL *fn_name)fn_args;

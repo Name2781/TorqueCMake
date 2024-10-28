@@ -1492,11 +1492,7 @@ long OggVorbisFile::ov_read(char *buffer,int length,
 								val=32767;
 							else if(val<-32768)
 								val=-32768;
-#if defined(TORQUE_OS_MAC) && !defined(TORQUE_BIG_ENDIAN)
-							*dest=((val << 8) & 0xFF00) | ((val >> 8) & 0x00FF);
-#else
-                     *dest=val;
-#endif
+              *dest=val;
 							dest+=channels;
 						}
 					}

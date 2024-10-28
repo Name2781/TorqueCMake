@@ -61,10 +61,6 @@ typedef unsigned long long  U64;
 #  define TORQUE_SUPPORTS_NASM
 #  define TORQUE_SUPPORTS_GCC_INLINE_X86_ASM
 #  include "platform/types.posix.h"
-
-#elif defined(__APPLE__)
-#  define TORQUE_OS_MAC
-#  define TORQUE_OS_MAC_OSX
 #if defined(i386)
 #  define TORQUE_SUPPORTS_NASM
 #endif

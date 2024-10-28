@@ -2492,39 +2492,6 @@ void TerrainRender::allocTerrTexture(Point2I pos, U32 level, U32 mipLevel, bool 
    mTextureGridPtr[level - 2][px + (py << (8 - level))] = cur;
 }
 
-static inline void fixcolors(GBitmap* bmp)
-{
-#if defined(TORQUE_OS_MAC) && defined(TORQUE_LITTLE_ENDIAN)
-   U32 _bpp = bmp->bytesPerPixel;
-   for(int miplevel = 0; miplevel < bmp->getNumMipLevels(); miplevel++)
-   {
-      U16* pixels = (U16*)bmp->getWritableBits(miplevel);
-      U32 numpixels = bmp->getWidth(miplevel) * bmp->getHeight(miplevel);
-      
-      for( int i = 0; i < numpixels; i++ )
-      {
-         register const U16 c = *(pixels + i);
-//         from:
-//         *sourceFormat = GL_RGBA;
-//         *byteFormat   = GL_UNSIGNED_SHORT_5_5_5_1;
-//         to:
-//         *sourceFormat = GL_BGRA_EXT;
-//         *byteFormat   = GL_UNSIGNED_SHORT_1_5_5_5_REV;
-
-         //static U16 __color = 0xF800;
-         // rrrrr ggggg bbbbb a
-         // a bbbbb ggggg rrrrr
-         register U16 red   = ( c & 0xf800 ) >> 11;
-         register U16 green = ( c & 0x07C0 ) >> 6;
-         register U16 blue  = ( c & 0x003e ) >> 1;
-         register U16 alpha = ( c & 0x0001 );
-         
-         *(pixels + i) = alpha << 15 | red << 10 | green << 5 | blue;
-      }
-   }
-#endif
-}
-
 void TerrainRender::buildBlendMap(AllocatedTexture *tex)
 {
    PROFILE_START(TerrainRenderBuildBlendMap);
@@ -2578,13 +2545,8 @@ void TerrainRender::buildBlendMap(AllocatedTexture *tex)
 			   U16 green = (color & SG_GREENMASK) >> 6;
 			   U16 alpha = (color & SG_ALPHAMASK);
 			   
-#if defined(TORQUE_OS_MAC)
-			   // a bbbbb ggggg rrrrr
-			   lmbits[i] = (alpha << 15) | (blue << 10) | (green << 5) | red;
-#else
 			   // bbbbb ggggg rrrrr a
 			   lmbits[i] = (blue << 11) | (green << 6) | (red << 1) | alpha;
-#endif
 		   }
 
 		   mCurrentBlock->lightMapTexture = TextureHandle(NULL, lm);
@@ -2599,8 +2561,6 @@ void TerrainRender::buildBlendMap(AllocatedTexture *tex)
 
 
    mCurrentBlock->mBlender->blend(x, y, level, (const U16*)lightmap->getBits(), mips);
-
-   fixcolors(bmp);
    
    mDynamicTextureCount++;
    if(mTextureFreeList.size())

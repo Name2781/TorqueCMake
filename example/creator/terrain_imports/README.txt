@@ -1,1 +1,0 @@
-This directory can be used to load heightfield bitmaps from.

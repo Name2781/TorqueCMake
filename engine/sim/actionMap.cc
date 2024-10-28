@@ -789,21 +789,6 @@ const char* ActionMap::getModifierString(const U32 modifiers)
 		realModifiers |= SI_MAC_OPT;
 
    switch (realModifiers & (SI_SHIFT|SI_CTRL|SI_ALT|SI_MAC_OPT)) {
-#if defined(TORQUE_OS_MAC)
-      // optional code, to output alt as cmd on mac.
-      // interpreter sees them as the same...
-     case (SI_SHIFT|SI_CTRL|SI_ALT):
-      return "shift-ctrl-cmd ";
-
-     case (SI_SHIFT|SI_ALT):
-      return "shift-cmd ";
-
-     case (SI_CTRL|SI_ALT):
-      return "ctrl-cmd ";
-
-     case (SI_ALT):
-      return "cmd ";
-#else
      case (SI_SHIFT|SI_CTRL|SI_ALT):
       return "shift-ctrl-alt ";
 
@@ -815,7 +800,7 @@ const char* ActionMap::getModifierString(const U32 modifiers)
 
      case (SI_ALT):
       return "alt ";
-#endif
+
      case (SI_SHIFT|SI_CTRL):
       return "shift-ctrl ";
 

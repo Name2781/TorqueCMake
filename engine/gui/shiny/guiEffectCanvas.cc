@@ -38,11 +38,9 @@ ConsoleFunction( createEffectCanvas, bool, 2, 2, "(string windowTitle)"
 {
    AssertISV(!Canvas, "createEffectCanvas: canvas has already been instantiated");
 
-#if !defined(TORQUE_OS_MAC) // macs can only run one instance in general.
 #if !defined(TORQUE_DEBUG) && !defined(INTERNAL_RELEASE)
    if(!Platform::excludeOtherInstances("TorqueTest"))
       return false;
-#endif
 #endif
    Platform::initWindow(Point2I(800, 600), argv[1]);
 

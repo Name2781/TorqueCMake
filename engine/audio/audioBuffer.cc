@@ -260,23 +260,7 @@ bool AudioBuffer::readWAV(ResourceObject *obj)
             if (data)
             {
                stream->read(chunkHdr.size, data);
-#if defined(TORQUE_OS_MAC)
-               // need to endian-flip the 16-bit data.
-               if (fmtHdr.bitsPerSample==16) // !!!TBD we don't handle stereo, so may be RL flipped.
-               {
-                  U16 *ds = (U16*)data;
-                  U16 *de = (U16*)(data+size);
-                  while (ds<de)
-                  {
-#if defined(TORQUE_BIG_ENDIAN)
-                     *ds = convertLEndianToHost(*ds);
-#else
-                     *ds = convertBEndianToHost(*ds);
-#endif
-                     ds++;
-                  }
-               }
-#endif
+
                chunkRemaining -= chunkHdr.size;
             }
             else

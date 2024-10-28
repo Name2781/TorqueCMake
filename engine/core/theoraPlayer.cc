@@ -847,11 +847,7 @@ bool TheoraTexture::readyAudio()
             if(val < -32768)
                val = -32768;
 
-#if defined(TORQUE_OS_MAC) && !defined(TORQUE_BIG_ENDIAN)
-            samples[count++] = ((val << 8) & 0xFF00) | ((val >> 8) & 0x00FF);
-#else
             samples[count++] = val;
-#endif
          }
       }
 

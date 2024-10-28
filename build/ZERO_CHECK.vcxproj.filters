@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\CMakeFiles\a5c1a0729e25a24a149f260d5828e7a7\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{915F2934-8564-3223-8172-046E8F42D446}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

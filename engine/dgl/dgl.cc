@@ -970,47 +970,6 @@ bool dglCheckState(const S32 mvDepth, const S32 pDepth,
 
 S32 gFSAASamples = 1; ///< 1==no FSAA.
 
-#if defined(TORQUE_OS_MAC)
-// new FSAA simple-method handling
-
-ConsoleFunctionGroupBegin( MacFSAA, "Mac-specific FSAA control functions.");
-
-//------------------------------------------------------------------------------
-ConsoleFunction( setFSAA, void, 2, 2, "setFSAA(int);")
-{
-   argc;
-   gFSAASamples = dAtoi(argv[1]);
-   if (gFSAASamples<1)
-      gFSAASamples = 1;
-   else if (gFSAASamples>gGLState.maxFSAASamples)
-      gFSAASamples = gGLState.maxFSAASamples;
-   dglSetFSAASamples(gFSAASamples);
-}
-
-//------------------------------------------------------------------------------
-ConsoleFunction( increaseFSAA, void, 1, 1, "increaseFSAA()" )
-{
-   if (gFSAASamples<gGLState.maxFSAASamples)
-   {
-      gFSAASamples<<=1;
-      dglSetFSAASamples(gFSAASamples);
-   }
-}
-
-//------------------------------------------------------------------------------
-ConsoleFunction( decreaseFSAA, void, 1, 1, "decreaseFSAA()" )
-{
-   if (gFSAASamples>1)
-   {
-      gFSAASamples>>=1;
-      dglSetFSAASamples(gFSAASamples);
-   }
-}
-
-ConsoleFunctionGroupEnd( MacFSAA );
-
-#endif
-
 //------------------------------------------------------------------------------
 ConsoleFunction(png2jpg, S32, 2, 3, "png2jpg(pngName,[quality=0-100])")
 {

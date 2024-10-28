@@ -657,7 +657,6 @@ bool GuiTextEditCtrl::onKeyDown(const GuiEvent &event)
 
          // End added UNIX emacs key bindings
          
-#if !defined(TORQUE_OS_MAC)
          // windows style cut / copy / paste / undo keybinds
          case KEY_C:
          case KEY_X:
@@ -681,7 +680,6 @@ bool GuiTextEditCtrl::onKeyDown(const GuiEvent &event)
                onUndo();
                return true;
             }
-#endif
 
          case KEY_DELETE:
          case KEY_BACKSPACE:
@@ -699,40 +697,6 @@ bool GuiTextEditCtrl::onKeyDown(const GuiEvent &event)
             return true;
       }
    }
-#if defined(TORQUE_OS_MAC)
-   // mac style cut / copy / paste / undo keybinds
-   else if (event.modifier & SI_ALT)
-   {
-      // Added Mac cut/copy/paste/undo keys
-      // Mac command key maps to alt in torque.
-      switch(event.keyCode)
-      {
-         case KEY_C:
-         case KEY_X:
-         {
-            // copy, and cut the text if we hit cmd-x
-            onCopy( event.keyCode==KEY_X );
-            return true;
-         }
-         case KEY_V:
-         {
-            onPaste();
-
-            // Execute the console command!
-            execConsoleCallback();
-
-            return true;
-         }
-            
-         case KEY_Z:
-            if (! mDragHit)
-            {
-               onUndo();
-               return true;
-            }
-      }
-   }
-#endif
    else
    {
       switch(event.keyCode)

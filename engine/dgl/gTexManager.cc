@@ -652,13 +652,8 @@ static void getSourceDestByteFormat(GBitmap *pBitmap, U32 *sourceFormat, U32 *de
 
       case GBitmap::RGB565:
       case GBitmap::RGB5551:
-#if defined(TORQUE_OS_MAC)
-         *sourceFormat = GL_BGRA_EXT;
-         *byteFormat   = GL_UNSIGNED_SHORT_1_5_5_5_REV;
-#else
          *sourceFormat = GL_RGBA;
          *byteFormat   = GL_UNSIGNED_SHORT_5_5_5_1;
-#endif
          break;
    };
 

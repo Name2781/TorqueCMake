@@ -12,10 +12,6 @@
 #include "core/fileStream.h"
 #include "audio/audioStreamSourceFactory.h"
 
-#ifdef TORQUE_OS_MAC
-//#define REL_WORKAROUND
-#endif
-
 //-------------------------------------------------------------------------
 #define MAX_AUDIOSOURCES      16                // maximum number of concurrent sources
 #define MIN_GAIN              0.05f             // anything with lower gain will not be started

@@ -529,11 +529,7 @@ void GameInit()
    Con::addVariable("$pref::OpenGL::gammaCorrection",               TypeF32,  &gOpenGLGammaCorrection);	
 	Con::addVariable("$pref::OpenGL::noDrawArraysAlpha",				  TypeBool, &gOpenGLNoDrawArraysAlpha);
 
-#if defined(TORQUE_OS_MAC)
-   gOpenGLDisableFC = true;
-#else
    Con::addVariable("$pref::OpenGL::disableEXTFogCoord", TypeBool, &gOpenGLDisableFC);
-#endif
 
    Con::addVariable("$pref::TS::autoDetail", TypeF32, &DetailManager::smDetailScale);
    Con::addVariable("$pref::visibleDistanceMod", TypeF32, &SceneGraph::smVisibleDistanceMod);

@@ -1,0 +1,10 @@
+^C:\USERS\ROBIE\ONEDRIVE\DESKTOP\REPOS\TORQUECMAKE\BUILD\CMAKEFILES\A5C1A0729E25A24A149F260D5828E7A7\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake -BC:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/torque.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

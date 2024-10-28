@@ -423,9 +423,7 @@ class TextureHandle
 
 #if defined(TORQUE_GATHER_METRICS) && TORQUE_GATHER_METRICS > 1
 #ifndef _PLATFORMGL_H_
-#if defined(TORQUE_OS_MAC)
-#include "PlatformMacCarb/platformGL.h"
-#elif defined(TORQUE_OS_WIN32)
+#if defined(TORQUE_OS_WIN32)
 #include "PlatformWin32/platformGL.h"
 #endif
 #endif

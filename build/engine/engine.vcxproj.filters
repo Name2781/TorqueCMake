@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\abstractPolyList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\boxConvex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\clippedPolyList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\concretePolyList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\convex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\convexBrush.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\depthSortList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\earlyOutPolyList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\extrudedPolyList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\gjk.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\optimizedPolyList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\planeExtractor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\polyhedron.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\collision\polytope.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\astAlloc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\astNodes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\BASscan.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\BASgram.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\codeBlock.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\compiledEval.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\compiler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\console.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleDoc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleFunctions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleInternal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleLogger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleParser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\consoleTypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\cmdgram.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\CMDscan.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\dynamicTypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\scriptObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\simBase.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\simDictionary.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\simManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\stringStack.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\telnetConsole.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\telnetDebugger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\console\typeValidators.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\constructor\constructorSimpleMesh.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\bitRender.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\bitStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\bitTables.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\crc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\chunkFile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\dataChunker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\dnet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\fileObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\fileStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\filterStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\findMatch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\frameAllocator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\idGenerator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\iTickable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\memStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\nStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\nTypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\resDictionary.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\resizeStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\resManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\stringTable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\stringBuffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\tagDictionary.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\tokenizer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\tVector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\zipAggregate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\zipHeaders.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\zipSubStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\unicode.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\core\theoraPlayer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapBm8.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapBmp.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapGif.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapJpeg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\bitmapPng.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\dgl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\dglMatrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gBitmap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gFont.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gPalette.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gTexManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gVectorField.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\lensFlare.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\materialList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\materialPropertyMap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\splineUtil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\stripCache.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\dgl\gDynamicTexture.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\i18n\lang.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\i18n\i18n.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\floorPlanRes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\forceField.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interior.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorCollision.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorDebug.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorInstance.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorIO.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorLightAnim.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorLMManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorMapRes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorRender.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorRes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorResObjects.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorSubObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\interiorMap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\lightUpdateGrouper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\mirrorSubObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\pathedInterior.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mBox.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mConsoleFunctions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathFn.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMath_C.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMatrix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mPlaneTransformer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mQuadPatch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mQuat.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mRandom.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mSolver.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mSplinePatch.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mathTypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mathUtils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathAMD.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathSSE.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platform.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\gameInterface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformAssert.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformCPU.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformFileIO.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformMemory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformRedBook.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformString.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformVideo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\profiler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\detailManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\lightManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneGraph.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneLighting.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneRoot.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneState.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sceneTraversal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\sgUtil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\shadowVolumeBSP.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sceneGraph\windingClipper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\actionMap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\connectionStringTable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\decalManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netConnection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netDownload.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netEvent.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netGhost.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netInterface.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\netStringTable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\pathManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\sceneObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\sim\simPath.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\fluidQuadTree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\fluidRender.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\fluidSupport.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\sky.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\sun.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\blender.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\bvQuadTree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\terrCollision.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\terrData.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\terrLighting.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\terrRender.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\waterBlock.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsAnimate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsCollision.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsDecal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsDump.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsIntegerSet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsLastDetail.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsMaterialList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsMesh.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsPartInstance.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShapeAlloc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShapeConstruct.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShapeInstance.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsShapeOldRead.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsSortedMesh.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsThread.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\ts\tsTransform.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audio.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audioBuffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audioDataBlock.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audioFunctions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\audioStreamSourceFactory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\oggMixedStreamSource.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\vorbisStream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\vorbisStreamSource.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\audio\wavStreamSource.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiCtrlArrayCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiFrameCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiPaneCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiScrollCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiStackCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiWindowCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\containers\guiTabBookCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBackgroundCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBitmapBorderCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBitmapButtonCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBitmapCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiBorderButton.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiButtonBaseCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiButtonCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiCheckBoxCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiColorPicker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiConsole.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiConsoleEditCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiConsoleTextCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiMLTextCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiMLTextEditCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiPopUpCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiRadioCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiSliderCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTextCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTextEditCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTextEditSliderCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTextListCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTreeViewCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiTabPageCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiListBoxCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiDirectoryFileListCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\controls\guiDirectoryTreeCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiArrayCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiCanvas.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiControl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiDefaultControlRender.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiTSControl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\core\guiTypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiControlListPopup.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiDebugger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiEditCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiFilterCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiGraphCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiInspector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiInspectorTypes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\editor\guiMenuBar.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiAviBitmapCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiChunkedBitmapCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiFadeinBitmapCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiMessageVectorCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\game\guiProgressCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\guiBubbleTextCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\guiInputCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\guiMouseEventCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\messageVector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\utility\guiTransitionCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\shiny\guiTheoraCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\shiny\guiEffectCanvas.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\gui\shiny\guiTickCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\aiClient.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\aiConnection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\aiPlayer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\aiWheeledVehicle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\ambientAudioManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\audioEmitter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\badWordFilter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\banList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\camera.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\cameraSpline.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\collisionTest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\debris.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\debugView.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fireballAtmosphere.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\game.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameBase.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameConnection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameConnectionEvents.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameConnectionMoves.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameFunctions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameProcess.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\gameTSCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\guiNoMouseCtrl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\guiPlayerView.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\item.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\missionArea.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\missionMarker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\pathCamera.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\physicalZone.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\player.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\projectile.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\rigid.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\rigidShape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\scopeAlwaysShape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\shadow.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\shapeBase.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\shapeCollision.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\shapeImage.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\showTSShape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\sphere.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\staticShape.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\trigger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\tsStatic.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\version.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fps\guiClockHud.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fps\guiCrossHairHud.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fps\guiHealthBarHud.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fps\guiShapeNameHud.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\httpObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\net.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\netTest.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\serverQuery.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\net\tcpObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\cameraFXMgr.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\explosion.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxFoliageReplicator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxLight.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxRenderObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxShapeReplicator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\fxSunLight.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\lightning.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\particleEmitter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\particleEngine.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\precipitation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\splash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\underLava.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\fx\weatherLightning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\flyingVehicle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\guiSpeedometer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\hoverVehicle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\vehicle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\vehicleBlocker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\game\vehicles\wheeledVehicle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\frustrumCuller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\quadTreeTracer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\rectClipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\triBoxCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\util\triRayCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgDecalProjector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgDetailMapping.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgLightingModel.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgLightManager.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgLightMap.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgLightObject.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgMissionLightingFilter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgObjectShadows.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgSceneLighting.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgSceneLightingInterior.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgSceneLightingTerrain.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\sgScenePersist.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\lightingSystem\volLight.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winAsmBlit.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winCPUInfo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winConsole.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winD3DVideo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winDInputDevice.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winDirectInput.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winFileio.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winFont.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winGL.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winGLSpecial.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winInput.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winMath.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winMath_ASM.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winMemory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winMutex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winNet.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winOGLVideo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winOpenAL.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winProcessControl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winRedbook.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winSemaphore.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winStrings.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winThread.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winTime.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winV2Video.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platformWin32\winWindow.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\interior\itfdump.asm" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathAMD_ASM.asm" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\math\mMathSSE_ASM.asm" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\platform\platformCPUInfo.asm" />
+    <None Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine\terrain\blender_asm.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{05B42810-3C7E-3DA1-B524-34B4D3CAE966}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
