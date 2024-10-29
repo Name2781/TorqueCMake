@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 
+enable_language(ASM_NASM CXX C)
+
 # default win32 rn
 add_executable(engine
     # collision
@@ -425,4 +427,17 @@ add_executable(engine
 	"platformWin32/winTime.cc"
 	"platformWin32/winV2Video.cc"
 	"platformWin32/winWindow.cc"
+
+	# editor
+	"editor/creator.cc"
+	"editor/editor.cc"
+	"editor/editTSCtrl.cc"
+	"editor/guiTerrPreviewCtrl.cc"
+	"editor/missionAreaEditor.cc"
+	"editor/terraformer.cc"
+	"editor/terraformerNoise.cc"
+	"editor/terraformerTexture.cc"
+	"editor/terrainActions.cc"
+	"editor/terrainEditor.cc"
+	"editor/worldEditor.cc"
 )

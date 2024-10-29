@@ -10,7 +10,7 @@
 #include "core/unicode.h"
 #include <string>
 
-WinConsole *WindowsConsole = NULL;
+WinConsole *WindowsConsole = NULL; 
 
 ConsoleFunction(enableWinConsole, void, 2, 2, "enableWinConsole(bool);")
 {

@@ -38,7 +38,7 @@ S32 dMemcmp(const void *ptr1, const void *ptr2, unsigned len)
 #endif
 
 //--------------------------------------
-void* FN_CDECL operator new(dsize_t, void* ptr)
+void* FN_CDECL operator new(dsize_t size, void* ptr)
 {
    return (ptr);
 }
