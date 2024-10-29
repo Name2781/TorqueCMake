@@ -8,6 +8,7 @@
 #include "platform/event.h"
 #include "platform/gameInterface.h"
 #include "core/unicode.h"
+#include <string>
 
 WinConsole *WindowsConsole = NULL;
 
@@ -37,13 +38,10 @@ void WinConsole::enable(bool enabled)
       const char *title = Con::getVariable("Con::WindowTitle");
       if (title && *title)
       {
-#ifdef UNICODE
-         UTF16 buf[512];
-         convertUTF8toUTF16((UTF8 *)title, buf, sizeof(buf));
-         SetConsoleTitle(buf);
-#else
-         SetConsoleTitle(title);
-#endif
+         int size_needed = MultiByteToWideChar(CP_UTF8, 0, title, -1, NULL, 0);
+         wchar_t* wTitle = new wchar_t[size_needed];
+         MultiByteToWideChar(CP_UTF8, 0, title, -1, wTitle, size_needed);
+         SetConsoleTitleW(wTitle);
       }
       stdOut = GetStdHandle(STD_OUTPUT_HANDLE);
       stdIn  = GetStdHandle(STD_INPUT_HANDLE);

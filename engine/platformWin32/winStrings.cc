@@ -115,7 +115,7 @@ int dStrcmp(const char *str1, const char *str2)
 
 int dStrcmp(const UTF16 *str1, const UTF16 *str2)
 {
-    return wcscmp(str1, str2);
+    return wcscmp((wchar_t*)str1, (wchar_t*)str2);
 }
  
 int dStricmp(const char *str1, const char *str2)
@@ -165,7 +165,7 @@ dsize_t dStrlen(const char *str)
 
 dsize_t dStrlen(const UTF16 *str)
 {
-    return (dsize_t)wcslen(str);
+    return (dsize_t)wcslen((wchar_t*)str);
 }
 
 char* dStrupr(char *str)
@@ -379,7 +379,7 @@ void dQsort(void *base, U32 nelem, U32 width, S32 (QSORT_CALLBACK *fcmp)(const v
 UTF8 * convertUTF16toUTF8(const UTF16 *string, UTF8 *buffer, U32 bufsize)
 {
     int nRet;
-    if((nRet = WideCharToMultiByte(CP_UTF8, 0, string, dStrlen(string), (LPSTR)buffer, bufsize, NULL, NULL)) != 0)
+    if((nRet = WideCharToMultiByte(CP_UTF8, 0, (LPCWCH)string, dStrlen(string), (LPSTR)buffer, bufsize, NULL, NULL)) != 0)
     {
         buffer[nRet] = 0;
         return buffer;
@@ -391,7 +391,7 @@ UTF8 * convertUTF16toUTF8(const UTF16 *string, UTF8 *buffer, U32 bufsize)
 UTF16 * convertUTF8toUTF16(const UTF8 *string, UTF16 *buffer, U32 bufsize)
 {
     int nRet;
-    if((nRet = MultiByteToWideChar(CP_UTF8, 0, (LPCSTR)string, dStrlen((const char *)string), buffer, bufsize)) != 0)
+    if((nRet = MultiByteToWideChar(CP_UTF8, 0, (LPCSTR)string, dStrlen((const char *)string), (LPWSTR)buffer, bufsize)) != 0)
     {
         buffer[nRet] = 0;
         return buffer;

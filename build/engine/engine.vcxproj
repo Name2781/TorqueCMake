@@ -86,13 +86,11 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/OpenAL 1.1 SDK/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
@@ -108,10 +106,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -119,11 +117,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\Debug\zlib.lib;..\lib\Debug\libjpeg.lib;..\lib\Debug\libpng.lib;..\lib\Debug\lungif.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\vorbis_static.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\ogg_static.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\theora_static.lib;Winmm.lib;Imm32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/Debug/engine.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/Debug/engine.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -134,12 +133,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/OpenAL 1.1 SDK/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
@@ -157,10 +154,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -168,11 +165,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\Release\zlib.lib;..\lib\Release\libjpeg.lib;..\lib\Release\libpng.lib;..\lib\Release\lungif.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\vorbis_static.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\ogg_static.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\theora_static.lib;Winmm.lib;Imm32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/Release/engine.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/Release/engine.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -183,12 +181,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/OpenAL 1.1 SDK/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
@@ -206,10 +202,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -217,11 +213,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\MinSizeRel\zlib.lib;..\lib\MinSizeRel\libjpeg.lib;..\lib\MinSizeRel\libpng.lib;..\lib\MinSizeRel\lungif.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\vorbis_static.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\ogg_static.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\theora_static.lib;Winmm.lib;Imm32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/MinSizeRel/engine.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/MinSizeRel/engine.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -232,13 +229,11 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files (x86)/OpenAL 1.1 SDK/include"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
@@ -254,10 +249,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Program Files (x86)\OpenAL 1.1 SDK\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\engine;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\openal\win32;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\zlib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\ljpeg\extras;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lpng;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lungif;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\include;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\lungif;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -265,11 +260,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win32\OpenAL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\lib\RelWithDebInfo\zlib.lib;..\lib\RelWithDebInfo\libjpeg.lib;..\lib\RelWithDebInfo\libpng.lib;..\lib\RelWithDebInfo\lungif.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\vorbis_static.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\ogg_static.lib;C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\lib\xiph\win32\theora_static.lib;Winmm.lib;Imm32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/RelWithDebInfo/engine.lib</ImportLibrary>
       <ProgramDataBaseFile>C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/build/engine/RelWithDebInfo/engine.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -291,7 +287,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/engine/CMakeLists.txt</Message>
@@ -304,7 +300,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/engine/CMakeLists.txt</Message>
@@ -317,7 +313,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/RobiE/OneDrive/Desktop/Repos/TorqueCMake/engine/CMakeLists.txt</Message>
@@ -330,7 +326,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\engine\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
     </CustomBuild>
@@ -726,6 +722,22 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\lib\libjpeg.vcxproj">
+      <Project>{3BBB34B5-ADBD-343A-80C0-2E96A8E30D2B}</Project>
+      <Name>libjpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\lib\libpng.vcxproj">
+      <Project>{BFBA9E0B-BEA1-3F3D-A14A-DD04837922C9}</Project>
+      <Name>libpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\lib\lungif.vcxproj">
+      <Project>{4FD928EC-A65F-3F45-93AB-40F65BBA37E4}</Project>
+      <Name>lungif</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\lib\zlib.vcxproj">
+      <Project>{0C8739E0-A268-3B3D-9537-476C9D0B1915}</Project>
+      <Name>zlib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

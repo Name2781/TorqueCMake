@@ -349,7 +349,7 @@ bool GL_Init( const char *dllname_gl, const char *dllname_glu )
    if (!winState.hinstOpenGL)
    {
 #ifdef UNICODE
-       if ( ( winState.hinstOpenGL = LoadLibrary( dn_gl ) ) == 0 )
+       if ( ( winState.hinstOpenGL = LoadLibrary( (LPCWSTR)dn_gl ) ) == 0 )
 #else
       if ( ( winState.hinstOpenGL = LoadLibrary( dllname_gl ) ) == 0 )
 #endif
@@ -360,7 +360,7 @@ bool GL_Init( const char *dllname_gl, const char *dllname_glu )
    if ( !winState.hinstGLU )
    {
 #ifdef UNICODE
-       if ( ( winState.hinstGLU = LoadLibrary( dn_glu ) ) == 0 )
+       if ( ( winState.hinstGLU = LoadLibrary( (LPCWSTR)dn_glu ) ) == 0 )
 #else
       if ( ( winState.hinstGLU = LoadLibrary( dllname_glu ) ) == 0 )
 #endif

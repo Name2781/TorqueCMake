@@ -84,7 +84,7 @@ bool dPathCopy(const char *fromName, const char *toName, bool nooverwrite)
    char *f = (char*)fromName;
    char *t = (char*)toName;
 #endif
-      return(::CopyFile( f, t, nooverwrite));
+      return(::CopyFile( (LPCWSTR)f, (LPCWSTR)t, nooverwrite));
    }
 
    // Copy Path
@@ -132,9 +132,9 @@ bool dPathCopy(const char *fromName, const char *toName, bool nooverwrite)
                   fileInfo[i].pFullPath + dStrlen(fromName) + (dStricmp(fileInfo[i].pFullPath, fromName) ? 1 : 0), fileInfo[i].pFileName);
          
 #ifdef UNICODE
-         UTF16 f[1024], t[1024];
-         convertUTF8toUTF16((UTF8 *)from, f, sizeof(f));
-         convertUTF8toUTF16((UTF8 *)to, t, sizeof(t));
+         wchar_t f[1024], t[1024];
+         convertUTF8toUTF16((UTF8 *)from, (UTF16 *)f, sizeof(f));
+         convertUTF8toUTF16((UTF8 *)to, (UTF16 *)t, sizeof(t));
 #else
          char *f = (char*)from;
          char *t = (char*)to;
@@ -197,8 +197,8 @@ File::Status File::open(const char *filename, const AccessMode openMode)
    dStrcpy(filebuf, filename);
    backslash(filebuf);
 #ifdef UNICODE
-   UTF16 fname[2048];
-   convertUTF8toUTF16((UTF8 *)filebuf, fname, sizeof(fname));
+   wchar_t fname[2048];
+   convertUTF8toUTF16((UTF8 *)filebuf, (UTF16 *)fname, sizeof(fname));
 #else
    char *fname;
    fname = filebuf;
@@ -524,8 +524,8 @@ static bool recurseDumpPath(const char *path, const char *pattern, Vector<Platfo
    dSprintf(buf, sizeof(buf), "%s/%s", path, pattern);
 
 #ifdef UNICODE
-   UTF16 search[1024];
-   convertUTF8toUTF16((UTF8 *)buf, search, sizeof(search));
+   wchar_t search[1024];
+   convertUTF8toUTF16((UTF8 *)buf, (UTF16*)search, sizeof(search));
 #else
    char *search = buf;
 #endif
@@ -538,7 +538,7 @@ static bool recurseDumpPath(const char *path, const char *pattern, Vector<Platfo
    {
 #ifdef UNICODE
       char fnbuf[1024];
-      convertUTF16toUTF8(findData.cFileName, (UTF8 *)fnbuf, sizeof(fnbuf));
+      convertUTF16toUTF8((UTF16*)findData.cFileName, (UTF8 *)fnbuf, sizeof(fnbuf));
 #else
       char *fnbuf = findData.cFileName;
 #endif
@@ -596,8 +596,8 @@ bool Platform::getFileTimes(const char *filePath, FileTime *createTime, FileTime
 {
    WIN32_FIND_DATA findData;
 #ifdef UNICODE
-   UTF16 fp[512];
-   convertUTF8toUTF16((UTF8 *)filePath, fp, sizeof(fp));
+   wchar_t fp[512];
+   convertUTF8toUTF16((UTF8 *)filePath, (UTF16 *)fp, sizeof(fp));
 #else
    const char *fp = filePath;
 #endif
@@ -633,8 +633,8 @@ bool Platform::createPath(const char *file)
       dStrncpy(pathbuf + pathLen, file, dir - file);
       pathbuf[pathLen + dir-file] = 0;
 #ifdef UNICODE
-      UTF16 b[1024];
-      convertUTF8toUTF16((UTF8 *)pathbuf, b, sizeof(b));
+      wchar_t b[1024];
+      convertUTF8toUTF16((UTF8 *)pathbuf, (UTF16 *)b, sizeof(b));
       bool ret = CreateDirectory(b, NULL);
 #else
       bool ret = CreateDirectory(pathbuf, NULL);
@@ -753,8 +753,8 @@ bool Platform::isFile(const char *pFilePath)
    // Get file info
    WIN32_FIND_DATA findData;
 #ifdef UNICODE
-   UTF16 b[512];
-   convertUTF8toUTF16((UTF8 *)pFilePath, b, sizeof(b));
+   wchar_t b[512];
+   convertUTF8toUTF16((UTF8 *)pFilePath, (UTF16 *)b, sizeof(b));
    HANDLE handle = FindFirstFile(b, &findData);
 #else
    HANDLE handle = FindFirstFile(pFilePath, &findData);
@@ -812,8 +812,8 @@ bool Platform::isDirectory(const char *pDirPath)
    // Get file info
    WIN32_FIND_DATA findData;
 #ifdef UNICODE
-   UTF16 b[512];
-   convertUTF8toUTF16((UTF8 *)pDirPath, b, sizeof(b));
+   wchar_t b[512];
+   convertUTF8toUTF16((UTF8 *)pDirPath, (UTF16 *)b, sizeof(b));
    HANDLE handle = FindFirstFile(b, &findData);
 #else
    HANDLE handle = FindFirstFile(pDirPath, &findData);

@@ -177,6 +177,22 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{F4848E15-66DE-37BA-8874-ED46E6BFF445}</Project>
       <Name>engine</Name>
     </ProjectReference>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\lib\libjpeg.vcxproj">
+      <Project>{3BBB34B5-ADBD-343A-80C0-2E96A8E30D2B}</Project>
+      <Name>libjpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\lib\libpng.vcxproj">
+      <Project>{BFBA9E0B-BEA1-3F3D-A14A-DD04837922C9}</Project>
+      <Name>libpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\lib\lungif.vcxproj">
+      <Project>{4FD928EC-A65F-3F45-93AB-40F65BBA37E4}</Project>
+      <Name>lungif</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\RobiE\OneDrive\Desktop\Repos\TorqueCMake\build\lib\zlib.vcxproj">
+      <Project>{0C8739E0-A268-3B3D-9537-476C9D0B1915}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

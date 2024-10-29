@@ -426,7 +426,3 @@ add_executable(engine
 	"platformWin32/winV2Video.cc"
 	"platformWin32/winWindow.cc"
 )
-
-find_package(OpenAL REQUIRED)
-target_link_libraries(engine PRIVATE OpenAL::OpenAL)
-target_include_directories(engine PRIVATE ${OPENAL_INCLUDE_DIR})

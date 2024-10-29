@@ -557,25 +557,25 @@ bool DInputDevice::enumerateObjects()
 //------------------------------------------------------------------------------
 const char* DInputDevice::getName()
 {
-#ifdef UNICODE
-   static UTF8 buf[512];
-   convertUTF16toUTF8(mDeviceInstance.tszInstanceName, buf, sizeof(buf));
-   return (const char *)buf;
-#else
-   return mDeviceInstance.tszInstanceName;
-#endif
+   int size_needed = WideCharToMultiByte(CP_UTF8, 0, mDeviceInstance.tszInstanceName, -1, NULL, 0, NULL, NULL);
+   if (size_needed <= 0) {
+      return nullptr;
+   }
+   char* charStr = new char[size_needed];
+   WideCharToMultiByte(CP_UTF8, 0, mDeviceInstance.tszInstanceName, -1, charStr, size_needed, NULL, NULL);
+   return (const char *)charStr;
 }
 
 //------------------------------------------------------------------------------
 const char* DInputDevice::getProductName()
 {
-#ifdef UNICODE
-   static UTF8 buf[512];
-   convertUTF16toUTF8(mDeviceInstance.tszProductName, buf, sizeof(buf));
-   return (const char *)buf;
-#else
-   return mDeviceInstance.tszProductName;
-#endif
+   int size_needed = WideCharToMultiByte(CP_UTF8, 0, mDeviceInstance.tszProductName, -1, NULL, 0, NULL, NULL);
+   if (size_needed <= 0) {
+      return nullptr;
+   }
+   char* charStr = new char[size_needed];
+   WideCharToMultiByte(CP_UTF8, 0, mDeviceInstance.tszProductName, -1, charStr, size_needed, NULL, NULL);
+   return (const char *)charStr;
 }
 
 //------------------------------------------------------------------------------

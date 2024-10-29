@@ -31,8 +31,8 @@ extern void installRedBookDevices();
 extern void handleRedBookCallback(U32, U32);
 
 #ifdef UNICODE
-static const UTF16 *windowClassName = L"Darkstar Window Class";
-static UTF16 windowName[256] = L"Darkstar Window";
+static const wchar_t *windowClassName = L"Darkstar Window Class";
+static wchar_t windowName[256] = L"Darkstar Window";
 #else
 static const char *windowClassName = "Darkstar Window Class";
 static char windowName[256] = "Darkstar Window";
@@ -107,7 +107,7 @@ bool Platform::excludeOtherInstances(const char *mutexName)
 #ifdef UNICODE
    UTF16 b[512];
    convertUTF8toUTF16((UTF8 *)mutexName, b, sizeof(b));
-   gMutexHandle = CreateMutex(NULL, true, b);
+   gMutexHandle = CreateMutex(NULL, true, (LPCWSTR)b);
 #else
    gMutexHandle = CreateMutex(NULL, true, mutexName);
 #endif
@@ -151,7 +151,7 @@ void Platform::restartInstance()
    const char* b = cen_buf;
 #endif
    // Start the child process. 
-   if( CreateProcess( b,
+   if( CreateProcess( (LPCWSTR)b,
       NULL,            // Command line
       NULL,           // Process handle not inheritable
       NULL,           // Thread handle not inheritable
@@ -181,7 +181,7 @@ bool Platform::checkOtherInstances(const char *mutexName)
 #ifdef UNICODE
    UTF16 b[512];
    convertUTF8toUTF16((UTF8 *)mutexName, b, sizeof(b));
-   pMutex  = CreateMutex(NULL, true, b);
+   pMutex  = CreateMutex(NULL, true, (LPCWSTR)b);
 #else
    pMutex = CreateMutex(NULL, true, mutexName);
 #endif
@@ -214,7 +214,7 @@ void Platform::AlertOK(const char *windowTitle, const char *message)
    UTF16 m[1024], t[512];
    convertUTF8toUTF16((UTF8 *)windowTitle, t, sizeof(t));
    convertUTF8toUTF16((UTF8 *)message, m, sizeof(m));
-   MessageBox(NULL, m, t, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_OK);
+   MessageBox(NULL, (LPCWSTR)m, (LPCWSTR)t, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_OK);
 #else
    MessageBox(NULL, message, windowTitle, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_OK);
 #endif
@@ -228,7 +228,7 @@ bool Platform::AlertOKCancel(const char *windowTitle, const char *message)
    UTF16 m[1024], t[512];
    convertUTF8toUTF16((UTF8 *)windowTitle, t, sizeof(t));
    convertUTF8toUTF16((UTF8 *)message, m, sizeof(m));
-   return MessageBox(NULL, m, t, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_OKCANCEL) == IDOK;
+   return MessageBox(NULL, (LPCWSTR)m, (LPCWSTR)t, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_OKCANCEL) == IDOK;
 #else
    return MessageBox(NULL, message, windowTitle, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_OKCANCEL) == IDOK;
 #endif
@@ -242,7 +242,7 @@ bool Platform::AlertRetry(const char *windowTitle, const char *message)
    UTF16 m[1024], t[512];
    convertUTF8toUTF16((UTF8 *)windowTitle, t, sizeof(t));
    convertUTF8toUTF16((UTF8 *)message, m, sizeof(m));
-   return (MessageBox(NULL, m, t, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_RETRYCANCEL) == IDRETRY);
+   return (MessageBox(NULL, (LPCWSTR)m, (LPCWSTR)t, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_RETRYCANCEL) == IDRETRY);
 #else
    return (MessageBox(NULL, message, windowTitle, MB_ICONINFORMATION | MB_SETFOREGROUND | MB_TASKMODAL | MB_RETRYCANCEL) == IDRETRY);
 #endif
@@ -452,7 +452,7 @@ static void processKeyMessage(UINT message, WPARAM wParam, LPARAM lParam)
    WORD asciiCode = 0;
    dMemset( &ascii, 0, sizeof( ascii ) );
 
-   S32 res = ToUnicode( keyCode, scanCode, keyboardState, ascii, 3, 0 );
+   S32 res = ToUnicode( keyCode, scanCode, keyboardState, (LPWSTR)ascii, 3, 0 );
 
    // This should only happen on Window 9x/ME systems
    if (res == 0)
@@ -982,7 +982,7 @@ static void InitWindowClass()
    wc.hCursor       = LoadCursor (NULL,IDC_ARROW);
    wc.hbrBackground = (HBRUSH) GetStockObject(BLACK_BRUSH);
    wc.lpszMenuName  = 0;
-   wc.lpszClassName = windowClassName;
+   wc.lpszClassName = (LPCWSTR)windowClassName;
    RegisterClass( &wc );
 
    // Curtain window class:
@@ -1429,7 +1429,7 @@ void Platform::initWindow(const Point2I &initialSize, const char *name)
 
    gWindowCreated = true;
 #ifdef UNICODE
-   convertUTF8toUTF16((UTF8 *)name, windowName, sizeof(windowName));
+   convertUTF8toUTF16((UTF8 *)name, (UTF16 *)windowName, sizeof(windowName));
 #else
    dStrcpy(windowName, name);
 #endif
@@ -1446,7 +1446,7 @@ void Platform::setWindowTitle( const char* title )
       return;
 
 #ifdef UNICODE
-   convertUTF8toUTF16((UTF8 *)title, windowName, sizeof(windowName));
+   convertUTF8toUTF16((UTF8 *)title, (UTF16 *)windowName, sizeof(windowName));
 #else
    dStrcpy(windowName, title);
 #endif
@@ -1568,7 +1568,7 @@ bool Platform::openWebBrowser( const char* webAddress )
       RegCloseKey( regKey );
       sHaveKey = true;
 
-      convertUTF16toUTF8(sWebKey,utf8WebKey,512);
+      convertUTF16toUTF8((UTF16 *)sWebKey,(UTF8 *)utf8WebKey,512);
 
 #ifdef UNICODE
       char *p = dStrstr((const char *)utf8WebKey, "%1"); 
@@ -1598,7 +1598,7 @@ bool Platform::openWebBrowser( const char* webAddress )
    dMemset( &pi, 0, sizeof( pi ) );
    CreateProcess( NULL,
 #ifdef UNICODE
-      b,
+      (LPWSTR)b,
 #else
       buf, 
 #endif
@@ -1618,7 +1618,7 @@ bool Platform::openWebBrowser( const char* webAddress )
 // Login password routines:
 //--------------------------------------
 #ifdef UNICODE
-static const UTF16* TorqueRegKey = dT("SOFTWARE\\GarageGames\\Torque");
+static const wchar_t* TorqueRegKey = dT("SOFTWARE\\GarageGames\\Torque");
 #else
 static const char* TorqueRegKey = "SOFTWARE\\GarageGames\\Torque";
 #endif

@@ -105,8 +105,8 @@ bool WinFont::create(const char *name, U32 size, U32 charset /* = TGE_ANSI_CHARS
        charset = TGE_ANSI_CHARSET;
 
 #ifdef UNICODE
-    UTF16 n[512];
-    convertUTF8toUTF16((UTF8 *)name, n, sizeof(n));
+    wchar_t n[512];
+    convertUTF8toUTF16((UTF8 *)name, (UTF16 *)n, sizeof(n));
     mFont = CreateFont(size,0,0,0,0,0,0,0,DEFAULT_CHARSET,OUT_TT_PRECIS,0,PROOF_QUALITY,0,n);
 #else
     mFont = CreateFont(size,0,0,0,0,0,0,0,charsetMap[charset],OUT_TT_PRECIS,0,PROOF_QUALITY,0,name);
@@ -207,7 +207,7 @@ PlatformFont::CharInfo &WinFont::getCharInfo(const UTF16 ch) const
     else
     {
       SIZE size;
-      GetTextExtentPoint32W(fontHDC, &ch, 1, &size);
+      GetTextExtentPoint32W(fontHDC, (LPCWSTR)ch, 1, &size);
       if(size.cx)
       {
           c.xIncrement = size.cx;
